@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like/Dislike System</title>
+    <style>
+        .active {
+            color: blue; /* Cambia il colore come desiderato */
+        }
+    </style>
+</head>
+<body>
+    <h1>Like/Dislike System</h1>
+    <button id="likeButton" onclick="toggleLike()">Like</button>
+    <button id="dislikeButton" onclick="toggleDislike()">Dislike</button>
+    <p>Likes: <span id="likeCount">0</span></p>
+    <p>Dislikes: <span id="dislikeCount">0</span></p>
+
+    <script>
+        var likeCount = 0;
+        var dislikeCount = 0;
+
+        function toggleLike() {
+            var likeButton = document.getElementById("likeButton");
+            var dislikeButton = document.getElementById("dislikeButton");
+            var likeCountElement = document.getElementById("likeCount");
+            var dislikeCountElement = document.getElementById("dislikeCount");
+
+            if (likeButton.classList.contains("active")) {
+                // Rimuovi il like se è già attivo
+                likeButton.classList.remove("active");
+                likeCount--;
+            } else {
+                // Rimuovi il dislike se è attivo e aggiungi il like
+                if (dislikeButton.classList.contains("active")) {
+                    dislikeButton.classList.remove("active");
+                    dislikeCount--;
+                }
+                likeButton.classList.add("active");
+                likeCount++;
+            }
+
+            likeCountElement.innerHTML = likeCount;
+            dislikeCountElement.innerHTML = dislikeCount;
+        }
+
+        function toggleDislike() {
+            var likeButton = document.getElementById("likeButton");
+            var dislikeButton = document.getElementById("dislikeButton");
+            var likeCountElement = document.getElementById("likeCount");
+            var dislikeCountElement = document.getElementById("dislikeCount");
+
+            if (dislikeButton.classList.contains("active")) {
+                // Rimuovi il dislike se è già attivo
+                dislikeButton.classList.remove("active");
+                dislikeCount--;
+            } else {
+                // Rimuovi il like se è attivo e aggiungi il dislike
+                if (likeButton.classList.contains("active")) {
+                    likeButton.classList.remove("active");
+                    likeCount--;
+                }
+                dislikeButton.classList.add("active");
+                dislikeCount++;
+            }
+
+            likeCountElement.innerHTML = likeCount;
+            dislikeCountElement.innerHTML = dislikeCount;
+        }
+    </script>
+</body>
+</html>

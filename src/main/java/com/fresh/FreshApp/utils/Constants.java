@@ -1,0 +1,46 @@
+package com.fresh.FreshApp.utils;
+
+public interface Constants {
+	String INIT_KEY = "chiaveInit";
+	String BL_KEY = "chiaveBL";
+	String MAIL_KEY = "chiaveMail";
+	String USER_KEY = "chiaveUsername";
+	String PSW_KEY = "chiavePsw";
+	String CONF_PSW_KEY = "chiaveConfPsw";
+	String BORN_KEY = "chiaveBorn";
+	String USER_LOGGED_KEY = "loggato";
+	String USER_NON_EXISTANT_KEY = "userNonExistantExceptionKey";
+	String INCORRECT_PWD_KEY = "incorrectPasswordExceptionKey";
+	String UNEXPECTED_ERROR_KEY = "unexpectedErrorKey";
+	String USER_ALREADY_EXIST = "userAlreadyExist";
+	String EMAIL_ALREADY_EXIST = "emailAlreadyExist";
+	String PASSWORD_NOT_MATCH = "passwordNotMatch";
+	String INVALID_FIELDS = "notComplete";
+	String CORRECT_PSW_KEY = "passwordCorretta";
+	String CREATE_POST_KEY = "post creato";
+	String READ_POST_KEY = "post pubblicato";
+	String EMPTY_POST_ERROR = "Post vuoto";
+	String POST_CREATED_KEY = "postJustCreated";
+	String ALL_POSTS_KEY = "allPosts";
+	String USER_ID_KEY = "userId";
+	String USER_DATA_KEY = "OggettoUtenteLoggato";
+	String COMMENT_TEXT_KEY = "Testo commento";
+	String ALL_COMMENTS_KEY = "allComments";
+	String EMPTY_COMMENT = "Commento vuoto";
+	String AUTOR_NULL_KEY = "Autore null";
+	String POST_NULL_KEY = "Post null";
+	String POST_ID_KEY = "postId";
+	String MODIFY_POST_KEY = "post modificato";
+	String ADD_IMG_KEY = "immagine da aggiungere";
+	String IMG_NULL_ERROR = "immagine non presente";
+	String FOLLOW_UTENTE_KEY = "utente da seguire";
+	String PROFILES_FOUND = "profili trovati";
+	String ORDER_BY_LIKES_KEY = "orderByLikes";
+	String ORDER_BY_COMMENTS_KEY = "orderByComments";
+	String POST_DATA_KEY = "post";
+	String COMMENT_ID_KEY = "commentId";
+	String POST_TEXT_KEY = "postText";
+	String POST_MEDIA_KEY = "postMedia";
+	String USERNAME_KEY = "username";
+	String IMG_PATH_KEY = "imagePath";
+}
